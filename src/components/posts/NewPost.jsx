@@ -61,38 +61,17 @@ export default function SimpleCard({onModalClose}) {
                   {...register("title", {required: true, maxLength: 120})}
                 />
                 <FormHelperText>
-                  Eg: The Art of Effective Communication
+                  Eg: Goku solos One Punch Man
                 </FormHelperText>
               </FormControl>
               <FormControl id='image'>
                 <FormLabel> Image URL</FormLabel>
                 <Input type='url' {...register("imageUrl", {required: true})} />
-                <FormHelperText>
-                  <Link
-                    onClick={() => {
-                      navigator.clipboard.writeText(
-                        "https://picsum.photos/200/300/"
-                      );
-                      toast({
-                        title: "URL Copied",
-                        status: "success",
-                        isClosable: true,
-                        position: "top",
-                        duration: 2000,
-                      });
-                    }}
-                  >
-                    Eg: https://picsum.photos/200/300/
-                  </Link>
-                  <div>
-                    <Text as='mark'>Copy image link by click</Text>
-                  </div>
-                </FormHelperText>
               </FormControl>
               <FormControl id='desc'>
                 <FormLabel> Description</FormLabel>
                 <Textarea
-                  placeholder='I know writing can be tough, Just type "blah blah blah" to test things out!'
+                  placeholder='Write your Blog'
                   as={TextareaAutosize}
                   minRows={5}
                   resize={"none"}
@@ -111,7 +90,7 @@ export default function SimpleCard({onModalClose}) {
                   isLoading={isLoading}
                   loadingText={"Loading..."}
                 >
-                  Hit the Big Blue Button! POST
+                  Add Blog
                 </Button>
               </Stack>
             </form>

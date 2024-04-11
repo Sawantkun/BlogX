@@ -57,7 +57,7 @@ export default function Navbar() {
   ];
   return (
     <Container maxW='1300px' className="nav">
-      <Box bg={useColorModeValue("gray.100", "#152840")} px={4}>
+      <Box bg={useColorModeValue("#152840", "#152840")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
@@ -90,7 +90,7 @@ export default function Navbar() {
                     rounded={"md"}
                     _hover={{
                       textDecoration: "none",
-                      bg: useColorModeValue("gray.200", "gray.700"),
+                      bg: useColorModeValue("cyan.700", "gray.700"),
                     }}
                     key={link.id}
                   >
@@ -116,7 +116,7 @@ export default function Navbar() {
             {user ? (
               <Button
                 variant={"solid"}
-                colorScheme={"teal"}
+                colorScheme={"blue"}
                 size={"sm"}
                 mr={4}
                 onClick={onModalOpen}
@@ -128,7 +128,7 @@ export default function Navbar() {
               <Tooltip label='Activate me, captain! Login required'>
                 <Button
                   variant={"solid"}
-                  colorScheme={"teal"}
+                  colorScheme={"blue"}
                   isDisabled={true}
                   size={"sm"}
                   mr={4}
@@ -158,7 +158,7 @@ export default function Navbar() {
             {user && (
               <Button
                 ml='auto'
-                colorScheme='teal'
+                colorScheme='blue'
                 size='sm'
                 onClick={logout}
                 isLoading={isLoading}
@@ -198,7 +198,7 @@ export default function Navbar() {
                     textDecoration: "none",
                   }}
                 >
-                  Glad you're here!😍
+                  Welcome Sir!😎
                 </Link>
               )}
             </Stack>

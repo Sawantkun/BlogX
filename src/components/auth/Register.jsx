@@ -46,7 +46,7 @@ export default function Register() {
       minH={"100vh"}
       align={"center"}
       justify={"center"}
-      bg={useColorModeValue("gray.50", "#0B1623")}
+      bg={useColorModeValue("#0B1623", "#0B1623")}
     >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} minW={500} py={12} px={6}>
         <Stack align={"center"}>
@@ -59,7 +59,7 @@ export default function Register() {
         </Stack>
         <Box
           rounded={"lg"}
-          bg={useColorModeValue("white", "#152840")}
+          bg={useColorModeValue("#152840", "#152840")}
           boxShadow={"lg"}
           p={8}
         >

@@ -46,7 +46,7 @@ export default function Login() {
       minH={"100vh"}
       align={"center"}
       justify={"center"}
-      bg={useColorModeValue("gray.50", "#0B1623")}
+      bg={useColorModeValue("#0B1623", "#0B1623")}
     >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} minW={500} py={12} px={6}>
         <Stack align={"center"}>
@@ -57,7 +57,7 @@ export default function Login() {
         </Stack>
         <Box
           rounded={"lg"}
-          bg={useColorModeValue("white", "#152840")}
+          bg={useColorModeValue("#152840", "#152840")}
           boxShadow={"lg"}
           p={8}
         >
@@ -83,7 +83,7 @@ export default function Login() {
                     {...register("password", passwordValidate)}
                   />
                   <InputRightElement width='4.5rem'>
-                    <Button h='1.75rem' size='sm' onClick={handleClick}>
+                    <Button h='1.75rem' size='sm' onClick={handleClick} bg={useColorModeValue("blue.400", "#152840")}>
                       {show ? "Hide" : "Show"}
                     </Button>
                   </InputRightElement>

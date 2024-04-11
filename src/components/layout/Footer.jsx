@@ -11,8 +11,8 @@ import {FaGithub} from "react-icons/fa";
 export default function Footer() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "#152840")}
-      color={useColorModeValue("gray.700", "gray.200")}
+      bg={useColorModeValue("#152840", "#152840")}
+      color={useColorModeValue("white", "gray.200")}
     >
       <Container
         as={Stack}
