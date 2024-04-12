@@ -48,7 +48,7 @@ export default function SimpleCard({onModalClose}) {
         </Stack>
         <Box
           rounded={"lg"}
-          bg={useColorModeValue("white", "#0B1623")}
+          bg={useColorModeValue("#0B1623", "#0B1623")}
           boxShadow={"lg"}
           p={8}
         >
