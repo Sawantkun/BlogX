@@ -41,7 +41,7 @@ export default function SimpleCard({onModalClose}) {
   };
 
   return (
-    <Flex minH={"40vh"} align={"center"} justify={"center"}>
+    <Flex minH={"40vh"} align={"center"} justify={"center"} bg={useColorModeValue("#0B1623", "#0B1623")} className="hello">
       <Stack spacing={8} mx={"auto"} maxW={"90%"} minW={"90%"} py={12}>
         <Stack align={"center"}>
           <Heading fontSize={"4xl"}>Add new post</Heading>
